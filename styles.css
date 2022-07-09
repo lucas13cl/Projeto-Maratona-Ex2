@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  html{
+   /*variáveis*/
+    --bg-color: rgb(218, 226, 226);
+    --text-color: rgb(62, 155, 155);
+    --primary-color: rgb(62, 155, 155);
+    --primary-color-dark: rgb(153, 203, 206);
+  }
+  body.Dark{
+    --bg-color: skyblue;
+    --text-color: rgb(2, 2, 2);
+  }
+  body.grape{
+    --bg-color:rgb(235, 194, 237);
+    --text-color: rgb(2, 2, 2);
+    --primary-color:rgb(149, 20, 156);
+    --primary-color-dark: rgb(200, 87, 206);
+  }
+  body.blue{
+  --bg-color:rgb(77, 136, 159);
+    --text-color: rgb(244, 244, 244);
+    --primary-color:rgb(124, 174, 197);
+    --primary-color-dark: rgb(85, 146, 174);
+  }
+  body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container{
+    text-align: center;
+    width: 300px;
+    margin: 30% auto;
+    
+  }
+  
+  img {
+    width: 100%;
+  }
+  img.avatar{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    padding: 3.8px;
+    border: var(--primary-color) solid 4px;
+  
+  }
+  h1{
+    font-size: 33px;
+    margin-top: 28px 0;
+    margin-bottom: 9px;
+  }
+  
+  .nome{
+    font-family: 'Roboto ' monospace;
+    font-size: 400px;
+    opacity: 9.9;
+    font-size: 20px;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 40px;
+  
+  }
+   ul li a {
+     height: 52px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: var(--primary-color); /* hex: 0 - F */
+     color: rgb(240, 240, 240);
+     text-transform: uppercase;
+     font-size: 15px;
+  
+     margin-bottom: 16px;
+     border-radius: 7px;
+  
+     transition: background 500ms;
+  
+  }
+  
+  /* pseudo-class */
+  ul li a:hover {
+    background: var(--primary-color-dark);
+  }
+  
+  
+   footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+  }
+   
+   footer:hover{
+     opacity: 1;
+   }
+   footer a{
+      color: var(--text-color);
+     
+   }
+   
+   
+   
+  
+  
+  
+  
+  
+  
